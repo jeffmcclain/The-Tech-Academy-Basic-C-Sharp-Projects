@@ -14,7 +14,7 @@ namespace step_92
 
             // prompt user to enter package weight
             Console.WriteLine("Enter the weight of your package (lb):");
-            ushort packageWeight = Convert.ToUInt16(Console.ReadLine());
+            float packageWeight = Convert.ToUInt16(Console.ReadLine());
             if (packageWeight > 50) // check to make sure the package doesn't exceed max weight
             {
                 Console.WriteLine("Package too heavy to be shipped via Package Express. Have a good day. Press ENTER to exit.");
@@ -24,18 +24,18 @@ namespace step_92
             
             // prompt user to enter the package width
             Console.WriteLine("\nEnter the package width (in):");
-            ushort packageWidth = Convert.ToUInt16(Console.ReadLine());
+            float packageWidth = Convert.ToUInt16(Console.ReadLine());
 
             // prompt user to enter the package height
             Console.WriteLine("\nEnter the package height (in):");
-            ushort packageHeight = Convert.ToUInt16(Console.ReadLine());
+            float packageHeight = Convert.ToUInt16(Console.ReadLine());
 
             // prompt user to enter the package length
             Console.WriteLine("\nEnter the package length (in):");
-            ushort packageLength = Convert.ToUInt16(Console.ReadLine());
+            float packageLength = Convert.ToUInt16(Console.ReadLine());
 
             // check to see if dimensions exceed package size limitations
-            int dimensions = packageWidth + packageHeight + packageLength;
+            float dimensions = packageWidth + packageHeight + packageLength;
             if ( dimensions > 50)
             {
                 Console.WriteLine("\nPackage too big to be shipped via Package Express. Please press ENTER to exit.");
@@ -44,10 +44,10 @@ namespace step_92
             }
 
             // calculate shipping cost quote
-            int shippingQuote = (dimensions * packageWeight) / 100;
+            float shippingQuote = (dimensions * packageWeight) / 100;
 
             // print quote to console
-            Console.WriteLine("\nEstimated shipping cost: $" + shippingQuote);
+            Console.WriteLine("\nEstimated shipping cost: $" + shippingQuote + "\nThank you.");
             
 
             Console.ReadLine();
