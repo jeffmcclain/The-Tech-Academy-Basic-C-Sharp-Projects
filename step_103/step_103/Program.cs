@@ -31,17 +31,17 @@ namespace step_103
 
 
 
-            // this is an infinite loop. Commen-out the first for loop and un-comment the following
+            // this is an infinite loop. Comment-out the first for loop and un-comment the following
             // for loop to correct this issue
-            //for (int j = 0; j > -1; j++ )
-            //{
-            //    Console.WriteLine(j);
-            //}
-
-            for (int j = 0; j < 10; j++)
+            for (int j = 0; j > -1; j++)
             {
                 Console.WriteLine(j);
             }
+
+            //for (int j = 0; j < 10; j++)
+            //{
+            //    Console.WriteLine(j);
+            //}
 
             // this for loop iterates through numbers <= 10
             for (int k = -5; k <= 10; k++)
