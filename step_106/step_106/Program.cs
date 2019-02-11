@@ -11,11 +11,8 @@ namespace step_106
         static void Main(string[] args)
         {
 
-            // create list numbers
+            // create list of numbers
             List<int> listNums = new List<int>() { 16, 25, 30, 77, 100, 819, 2000, 11500, 15115, 2001234 };
-            
-            // create list to hold the quotient of each executed equation
-            List<int> quotientList = new List<int>();
 
             try
             {
@@ -27,8 +24,7 @@ namespace step_106
                 foreach (int listNum in listNums)
                 {
                     int quotient = listNum / userNum; // divide list index value by user input. Assign to new variable
-                    quotientList.Add(quotient);
-                    Console.WriteLine(listNum + " divided by " + userNum + " equals " + quotient);
+                    Console.WriteLine("\n" + listNum + " divided by " + userNum + " equals " + quotient);
                 }
             }
             catch (FormatException) // this catches non integer input and displays custom error message
