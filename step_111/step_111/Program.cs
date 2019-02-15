@@ -37,7 +37,7 @@ namespace step_111
             
             // create new object with the datatype 'Equation' and variable 'answer'
             Equation answer = new Equation();
-            // use the object stored in 'answer' to call methods within the class 'Equation' and pass in the variable 'userNum' 
+            // use the object assigned to 'answer' to call methods within the class 'Equation' and pass in the variable 'userNum' 
             answer.Addition(userNum);
             answer.Divide(userNum);
             answer.Multiply(userNum);
