@@ -8,30 +8,25 @@ namespace step_111
 {
     public class Equation
     {
-        public void Addition()
+        // create method and pass user input into parameter
+        public int Addition(int userNum)
         {
-            int addNum = UserNum;
-            int addAnswer = 55 + addNum;
-            //return addAnswer;
-            Console.WriteLine(addAnswer);
+            // declare a new variable to hold the result of the following equation
+            int addAnswer = 55 + userNum;
+            return addAnswer; // return stored value to the method
         }
 
-        public void Divide()
+        public int Divide(int userNum)
         {
-            int divideNum = UserNum;
-            int divideAnswer = 100000 / divideNum;
-            //return divideAnswer;
-            Console.WriteLine(divideAnswer);
+            int divAnswer = 100000 / userNum;
+            return divAnswer;
         }
 
-        public void Multiply()
+        public int Multiply(int userNum)
         {
-            int multiplyNum = UserNum;
-            int multAnswer = 5 * multiplyNum;
-            //return multAnswer;
-            Console.WriteLine(multAnswer);
+            int multAnswer = 5 * userNum;
+            return multAnswer;
         }
-
-        public int UserNum { get; set; }
+        
     }
 }

@@ -34,21 +34,18 @@ namespace step_111
                     Console.ReadLine();
                 }
             }
-
-            Equation Addition = new Equation();
-            Addition.UserNum = userNum;
-            Equation Divide = new Equation();
-            Divide.UserNum = userNum;
-            Equation Multiply = new Equation();
-            Multiply.UserNum = userNum;
-
-            Equation Run = new Equation();
-            Run.Addition();
-            Run.Divide();
-            Run.Multiply();
             
+            // create new object with the datatype 'Equation' and variable 'answer'
+            Equation answer = new Equation();
+            // use the object stored in 'answer' to call methods within the class 'Equation' and pass in the variable 'userNum' 
+            answer.Addition(userNum);
+            answer.Divide(userNum);
+            answer.Multiply(userNum);
 
-            Console.WriteLine();
+            // print to console the stored values from the outside methods
+            Console.WriteLine("\n 55 plus " + userNum + " equals " + answer.Addition(userNum) + 
+                "\n\n 100,000 divided by " + userNum + " equals " + answer.Divide(userNum) + 
+                "\n\n 5 multiplied by " + userNum + " equals " + answer.Multiply(userNum));
             Console.ReadLine();
             
 
