@@ -8,6 +8,7 @@ namespace step_115
 {
     class Equation
     {
+        // this method has two parameters, one of which is optional, and return a value
         public int Addition(int inputOne, int inputTwo = 0)
         {
             
