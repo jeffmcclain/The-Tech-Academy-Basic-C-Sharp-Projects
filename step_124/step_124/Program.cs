@@ -18,6 +18,10 @@ namespace step_124
             // call method 'SayName()' on the object 'name'
             name.SayName();
 
+            // using polymorphism instantiate object of type 'IQuittable' and call the 'Quit()' method
+            IQuittable quit = new Employee();
+            quit.Quit();
+            
             Console.ReadLine();
         }
     }
