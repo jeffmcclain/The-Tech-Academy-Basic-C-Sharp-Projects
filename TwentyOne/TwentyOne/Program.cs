@@ -10,18 +10,30 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+            //// EXAMPLE of Inheritance
+            //Game game = new Game();
+            //game.Players = new List<string>() { "Jesse", "Jefe", "Billy-Bob" };
+            //game.ListPlayers();
+            //game.Play();
+            //Console.ReadLine();
 
-            Deck deck = new Deck();
-            deck.Shuffle(3);
-            //deck = Shuffle(deck: deck, times: 3); // named parameters
 
-            foreach(Card card in deck.Cards)
-            {
-                Console.WriteLine(card.Face + " of " + card.Suit);
-            }
-
-            Console.WriteLine(deck.Cards.Count);
+            TwentyOneGame game = new TwentyOneGame();
+            game.Players = new List<string>() { "Jesse", "Bill", "Bob" };
+            game.ListPlayers();
             Console.ReadLine();
+
+            //Deck deck = new Deck();
+            //deck.Shuffle(3);
+            ////deck = Shuffle(deck: deck, times: 3); //  EXAMPLE of named parameters
+
+            //foreach (Card card in deck.Cards)
+            //{
+            //    Console.WriteLine(card.Face + " of " + card.Suit);
+            //}
+
+            //Console.WriteLine(deck.Cards.Count);
+            //Console.ReadLine();
         }
 
         
