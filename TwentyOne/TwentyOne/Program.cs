@@ -18,22 +18,32 @@ namespace TwentyOne
             //Console.ReadLine();
 
 
-            TwentyOneGame game = new TwentyOneGame();
-            game.Players = new List<string>() { "Jesse", "Bill", "Bob" };
-            game.ListPlayers();
-            Console.ReadLine();
-
-            //Deck deck = new Deck();
-            //deck.Shuffle(3);
-            ////deck = Shuffle(deck: deck, times: 3); //  EXAMPLE of named parameters
-
-            //foreach (Card card in deck.Cards)
-            //{
-            //    Console.WriteLine(card.Face + " of " + card.Suit);
-            //}
-
-            //Console.WriteLine(deck.Cards.Count);
+            //TwentyOneGame game = new TwentyOneGame();
+            //game.Players = new List<string>() { "Jesse", "Bill", "Bob" };
+            //game.ListPlayers();
             //Console.ReadLine();
+
+            //Game game = new TwentyOneGame();
+            //game.Players = new List<Player>();
+            //Player player = new Player();
+            //player.Name = "Jesse";
+
+            //game = game + player; //// adds player to list using overloaded operator
+            //game = game - player; //// removes player from list using overloaded operator
+            //game += player; // shorthand for the code above
+            //game -= player;
+
+            Deck deck = new Deck();
+            deck.Shuffle(3);
+            //deck = Shuffle(deck: deck, times: 3); //  EXAMPLE of named parameters
+
+            foreach (Card card in deck.Cards)
+            {
+                Console.WriteLine(card.Face + " of " + card.Suit);
+            }
+
+            Console.WriteLine(deck.Cards.Count);
+            Console.ReadLine();
         }
 
         
