@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace step_129
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // instantiate object and assign values to properties 'firstName' and 'lastName'
+            Employee name = new Employee();
+            name.firstName = "Sample";
+            name.lastName = "Student";
+            name.Id = 1;
+            name.Id = 2;
+            
+            // call method 'SayName()' on the object 'name'
+            name.SayName();
+
+            // using polymorphism instantiate object of type 'IQuittable' and call the 'Quit()' method
+            IQuittable quit = new Employee();
+            quit.Quit();
+
+            Console.ReadLine();
+        }
+    }
+}
