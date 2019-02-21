@@ -35,7 +35,7 @@ namespace TwentyOne
 
             Deck deck = new Deck();
             deck.Shuffle(3);
-            //deck = Shuffle(deck: deck, times: 3); //  EXAMPLE of named parameters
+            //deck = Shuffle(deck: deck, times: 3); //  EXAMPLE of naming parameters
 
             foreach (Card card in deck.Cards)
             {

@@ -8,27 +8,22 @@ namespace TwentyOne
 {
     public class Deck
     {
-        // create Constructor to assign values to an object
+        // 'Deck()' is a Constructor to assign values to an object
         // Constructors always go at the top of class, before the properties
         public Deck()
         {
+            // constructor for cards
             Cards = new List<Card>();
 
-            List<string> Suits = new List<string>() { "Clubs", "Hearts", "Diamonds", "Spades" };
-            List<string> Faces = new List<string>()
+            // this loops through and assigns each face a suit, creating the cards
+            for (int i = 0; i < 13; i++) // loops through each Face value
             {
-                "Two", "Three", "Four", "Five", "Six", "Seven",
-                "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"
-            };
-
-            foreach (string face in Faces)
-            {
-                foreach (string suit in Suits)
+                for (int j = 0; j < 4; j++) // loops through each Face value once for each Suit
                 {
                     Card card = new Card();
-                    card.Suit = suit;
-                    card.Face = face;
-                    Cards.Add(card);
+                    card.Face = (Face)i; // cast an integer to each face
+                    card.Suit = (Suit)j; // cast an integer to each Suit
+                    Cards.Add(card); // add each card to the 'Cards' list
                 }
             }
         }

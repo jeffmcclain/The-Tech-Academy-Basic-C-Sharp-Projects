@@ -8,16 +8,30 @@ namespace TwentyOne
 {
     public class Card // this class defines/designs an object that will be used in the program
     {
-        // create Constructor to assign default values upon creation
-        public Card()
-        {
-            Suit = "Spades";
-            Face = "Two";
-        }
-
-        // 'public' makes this property accessible by other parts of the program
-        public string Suit { get; set; } // allows to 'get' or 'set' this property
-        public string Face { get; set; }
-
+        public Suit Suit { get; set; }
+        public Face Face { get; set; }
+    }
+    public enum Suit // ENUM is a data type that creates a set list of values
+    {
+        Clubs,
+        Diamonds,
+        Hearts,
+        Spades
+    }
+    public enum Face
+    {
+        Two,
+        Three,
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack,
+        Queen,
+        King,
+        Ace
     }
 }
