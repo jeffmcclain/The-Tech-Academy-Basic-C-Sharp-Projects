@@ -8,8 +8,8 @@ namespace step_129
 {
     public class Employee<T> : Person, IQuittable
     {
-        public int Id { get; set; }
-        public List<T> Things { get; set; }
+        public int Id { get; set; } // property with the data type of integer
+        public List<T> Things { get; set; } // property of a list with data type generic
         
 
         // implement 'SayName()' method with keyword 'override' in order to access within the abstract class 'Person'
