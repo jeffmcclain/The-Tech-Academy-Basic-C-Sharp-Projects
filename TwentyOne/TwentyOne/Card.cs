@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    public class Card // this class defines/designs an object that will be used in the program
+    public struct Card // this class defines/designs an object that will be used in the program
     {
         public Suit Suit { get; set; }
         public Face Face { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("{0} of {1}", Face, Suit);
+        }
     }
     public enum Suit // ENUM is a data type that creates a set list of values
     {
