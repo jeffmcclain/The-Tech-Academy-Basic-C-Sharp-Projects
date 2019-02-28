@@ -27,14 +27,23 @@ namespace step_162
             Console.WriteLine("\nEnter an adjective...");
             string adjective = Console.ReadLine();
 
-            // create a variable using the keyword var
-            var madLib = new MadLib(name, place, verb, noun, adjective);
-
-            Console.WriteLine("\n\nHello, {0}! Welcome to {1}! A place where you " +
+            if (place == "")
+            {
+                // create a variable using the keyword var
+                var madLib = new MadLib(name);
+                Console.WriteLine("\n\nHello, {0}! Welcome to {1}! A place where you " +
                 "can always find a {2} {3} and the skies are always {4}.", madLib.Name, madLib.Place,
                 madLib.Verb, madLib.Noun, madLib.Adjective);
+            }
+            else
+            {
+                // create a variable using the keyword var
+                var madLib = new MadLib(name, place, verb, noun, adjective);
+                Console.WriteLine("\n\nHello, {0}! Welcome to {1}! A place where you " +
+                "can always find a {2} {3} and the skies are always {4}.", madLib.Name, madLib.Place,
+                madLib.Verb, madLib.Noun, madLib.Adjective);
+            }
             Console.Read();
-
         }
     }
 }

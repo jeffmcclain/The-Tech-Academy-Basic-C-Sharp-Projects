@@ -9,9 +9,7 @@ namespace step_162
     public class MadLib
     {
 
-        public MadLib(string name) : this(name, "Moon", "shooting", "star", "clear")
-        {
-        }
+        
 
         public MadLib(string name, string place, string verb, string noun, string adjective)
         {
@@ -20,6 +18,10 @@ namespace step_162
             Verb = verb;
             Noun = noun;
             Adjective = adjective;
+        }
+
+        public MadLib(string name) : this(name, "Moon", "shooting", "star", "clear")
+        {
         }
 
         public string Name { get; set; }
