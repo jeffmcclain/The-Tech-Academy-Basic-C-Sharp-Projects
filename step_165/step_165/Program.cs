@@ -54,15 +54,6 @@ namespace step_165
                     Console.ReadLine();
                 }
             }
-
-
-
-
-
-            //exceptions must be handled using "try/catch"
-
-
-            
         }
     }
 }

@@ -1,0 +1,45 @@
+﻿@using step_247.ViewModels
+@model List<QuoteVM>
+
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h5 class="m-0">Customer Insurance Quotes</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <label>First Name</label>
+                </div>
+                <div class="col">
+                    <label>Last Name</label>
+                </div>
+                <div class="col">
+                    <label>Email Address</label>
+                </div>
+                <div class="col">
+                    <label>Quote Total</label>
+                </div>
+            </div>
+            <hr />
+            @foreach (var quote in Model)
+            {
+                <input type="hidden" name="Id" value="@quote.Id" />
+                <div class="row mb-3">
+                    <div class="col">
+                        @quote.FirstName
+                    </div>
+                    <div class="col">
+                        @quote.LastName
+                    </div>
+                    <div class="col">
+                        @quote.EmailAddress
+                    </div>
+                    <div class="col">
+                        @quote.QuoteAmount
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
